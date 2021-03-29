@@ -1,3 +1,44 @@
-body{
-    font-family: 'Roboto';
+:root{
+    --white: #fff;
+    --cinzaesc: #333333;
+    --cinzacl: #A6A6A6;
+    --bg-color: #E5E5E5;
+    --bg-title:  #CF2B2B;
+    --bg-button-first: #CBCBCB;
+    --bg-button-second: #32B72F;
+    --bg-telaconfirmacao: #50D074;
+    --font-roboto: 'Roboto';
+    --font-righteous: 'Righteous';
+    --font-light300: lighter;
+    --font-normal400: normal;
+    --font-bold700: bold;
+    --size15: 15px;
+    --size16: 16px;
+    --size18: 18px;
+    --size20: 20px;
+    --size26: 26px;
+    --size44: 44px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--bg-title);
+    height: 92px;
+    padding-left: 21px;
+}
+.titulo{
+    font-family: var(--font-righteous);
+    font-size: var(--size44);
+    color: var(--white);
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+.subtitulo{
+    font-family: var(--font-roboto);
+    font-size: var(--size18);
+    color: var(--white);
+}
+.corpo{
+    margin-top: 92px;
 }
