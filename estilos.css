@@ -26,19 +26,39 @@ header{
     background-color: var(--bg-title);
     height: 92px;
     padding-left: 21px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.titulo{
+.titulo_header{
     font-family: var(--font-righteous);
     font-size: var(--size44);
     color: var(--white);
     margin-bottom: 5px;
     padding-top: 10px;
 }
-.subtitulo{
+.subtitulo_header{
     font-family: var(--font-roboto);
     font-size: var(--size18);
     color: var(--white);
 }
 .corpo{
     margin-top: 92px;
+    margin-left: 19px;
+}
+.titulo_corpo{
+    font-family: var(--font-righteous);
+    font-size: var(--size26);
+    color: var(--cinzaesc);
+    margin-top: calc(92px + 31px);
+    margin-bottom: 17px;
+}
+.categoria{
+    display: flex;
+    background-color: blue;
+    margin-bottom: -96px;
+}
+.opcao{
+    height: 216px;
+    width: 172px;
+    margin-right: 16px;
+    background-color: blueviolet;
 }
