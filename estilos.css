@@ -62,7 +62,7 @@ header{
     background-color: var(--bg-color);
     margin-bottom: -96px;
     overflow: hidden;
-    width: 100%;
+    width: 800px;
 }
 .opcao{
     display: flex;
@@ -73,6 +73,7 @@ header{
     margin-right: 16px;
     border-radius: 9px;
     background-color: var(--white);
+    box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, .25);
 }
 .opcao img{
     border-radius: 4px;
@@ -113,6 +114,8 @@ header{
     bottom: 0;
     height: 92px;
     background-color: var(--white);
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+
 }
 .button{
     height: 61px;
