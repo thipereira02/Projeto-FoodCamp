@@ -46,7 +46,8 @@ header{
 .corpo{
     margin-top: 92px;
     margin-left: 19px;
-    margin-bottom: calc(92px + 16px);
+    margin-bottom: 92px;
+    height: 850px;
 }
 .titulo_corpo{
     font-family: var(--font-righteous);
@@ -57,7 +58,7 @@ header{
 }
 .categoria{
     display: flex;
-    background-color: blue;
+    background-color: var(--bg-color);
     margin-bottom: -96px;
     overflow: hidden;
 }
@@ -66,13 +67,15 @@ header{
     width: 172px;
     margin-right: 16px;
     border-radius: 9px;
-    background-color: blueviolet;
+    background-color: var(--white);
 }
 .barrainferior{
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    bottom: 0;
     height: 92px;
     background-color: var(--white);
 }
