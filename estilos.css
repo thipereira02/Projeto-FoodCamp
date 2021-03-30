@@ -17,6 +17,7 @@
     --size16: 16px;
     --size18: 18px;
     --size20: 20px;
+    --size22: 22px;
     --size26: 26px;
     --size44: 44px;
 }
@@ -132,4 +133,54 @@ button{
     color: var(--white);
     text-align: center;
     margin-top: 8px;
+}
+.popup{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 377px;
+    height: 353px;
+    background-color: var(--bg-telaconfirmacao);
+    border-radius: 9px;
+    font-family: var(--font-roboto);
+    color: var(--white);
+}
+.popup p{
+    font-size: var(--size22);
+    font-weight: var(--font-bold700);
+    margin-top: 21px;
+    margin-bottom: px;
+}
+.linhasitens{
+    display: flex;
+    justify-content: space-between;
+    width: calc(172px + 93px + 61px);
+}
+.linhasitens p{
+    font-weight: var(--font-normal400);
+    margin-bottom: -5px;
+}
+.linhasitens .total{
+    font-weight: var(--font-bold700);
+}
+.confirmar{
+    background-color: var(--white);
+    font-size: var(--size22);
+    font-weight: var(--font-bold700);
+    color: var(--bg-telaconfirmacao);
+    width: 329px;
+    height: 52px;
+    border-radius: 100px;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+.cancelar{
+    display: flex;
+    justify-content: center;
+    font-size: var(--size20);
+    background-color: var(--bg-telaconfirmacao);
+    font-weight: var(--font-bold700);
+    width: 333px;
+    height: 52px;
+    margin-top: 20px;
 }
