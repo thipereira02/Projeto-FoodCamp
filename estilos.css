@@ -51,6 +51,7 @@ main{
     padding-top: 120px;
     padding-left: 21px;
     padding-bottom: 205px;
+    height: 1060px;
     background-color: var(--bg-color);
 }
 .titulo_corpo{
@@ -62,7 +63,7 @@ main{
     display: flex;
     margin-top: 17px;
     margin-bottom: 27px;
-    overflow: hidden;
+    overflow: scroll;
 }
 button{
     display: flex;
