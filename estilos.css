@@ -2,6 +2,7 @@
     --white: #fff;
     --cinzaesc: #333333;
     --cinzacl: #A6A6A6;
+    --black: #000;
     --bg-color: #E5E5E5;
     --bg-title:  #CF2B2B;
     --bg-button-first: #CBCBCB;
@@ -61,13 +62,47 @@ header{
     background-color: var(--bg-color);
     margin-bottom: -96px;
     overflow: hidden;
+    width: 100%;
 }
 .opcao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 216px;
     width: 172px;
     margin-right: 16px;
     border-radius: 9px;
     background-color: var(--white);
+}
+.opcao img{
+    border-radius: 4px;
+    width: 144px;
+    height: 87px;
+}
+.opcao div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 185px;
+    width: 144px;
+}
+.nome{
+    font-family: var(--font-roboto);
+    font-weight: var(--font-bold700);
+    font-size: var(--size16);
+    color: var(--cinzaesc);
+}
+.descricao{
+    font-family: var(--font-roboto);
+    font-weight: var(--font-light300);
+    font-size: var(--size15);
+    color: var(--cinzacl);    
+}
+.valor{
+    font-weight: var(--font-roboto);
+    font-weight: var(--font-normal400);
+    font-size: var(--size16);
+    color: var(--black);
 }
 .barrainferior{
     position: fixed;
