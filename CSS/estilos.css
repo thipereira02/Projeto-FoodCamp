@@ -21,7 +21,7 @@
     --size26: 26px;
     --size44: 44px;
 }
-header, main, .barrainferior{
+header, main, .barra_inferior{
     max-width: 414px;
     margin-left: max(0px, 50vw - 207px);
 }
