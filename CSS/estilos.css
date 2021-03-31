@@ -35,14 +35,14 @@ header{
     padding-left: 21px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.titulo_header{
+.titulo{
     font-family: var(--font-righteous);
     font-size: var(--size44);
     color: var(--white);
     margin-bottom: 5px;
     padding-top: 10px;
 }
-.subtitulo_header{
+.subtitulo{
     font-family: var(--font-roboto);
     font-size: var(--size18);
     font-weight: var(--font-normal400);
@@ -109,7 +109,7 @@ button{
     font-size: var(--size16);
     color: var(--black);
 }
-.barrainferior{
+.barra_inferior{
     position: fixed;
     display: flex;
     justify-content: center;
@@ -134,7 +134,7 @@ button{
     text-align: center;
     margin: 8px auto 0 auto;
 }
-.popup{
+.revisao{
     display: none;
     flex-direction: column;
     align-items: center;
@@ -145,25 +145,25 @@ button{
     font-family: var(--font-roboto);
     color: var(--white);
 }
-.popup p{
+.revisao p{
     font-size: var(--size22);
     font-weight: var(--font-bold700);
     margin-top: 21px;
     margin-bottom: px;
 }
-.linhasitens{
+.linhas_itens{
     display: flex;
     justify-content: space-between;
     width: calc(172px + 93px + 61px);
 }
-.linhasitens p{
+.linhas_itens p{
     font-weight: var(--font-normal400);
     margin-bottom: -5px;
 }
-.linhasitens .total{
+.linhas_itens .total{
     font-weight: var(--font-bold700);
 }
-.confirmar{
+.botao_confirmar{
     background-color: var(--white);
     font-size: var(--size22);
     font-weight: var(--font-bold700);
@@ -174,7 +174,7 @@ button{
     padding: 20px 0;
     margin-top: 40px;
 }
-.cancelar{
+.botao_cancelar{
     display: flex;
     justify-content: center;
     font-size: var(--size20);
