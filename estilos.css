@@ -132,7 +132,7 @@ button{
     font-weight: var(--font-normal400);
     color: var(--white);
     text-align: center;
-    margin-top: 8px;
+    margin: 8px auto 0 auto;
 }
 .popup{
     display: none;
