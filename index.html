@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="Estilos/reset.css">
+    <link rel="stylesheet" href="Estilos/estilo.css">
     <link rel="icon" href="Imagens/Group_18.png"/>    
     <title>FoodCamp</title>
 </head>
@@ -22,8 +22,8 @@
             <p class="titulo_corpo">
                 Primeiro, seu prato
             </p>
-            <div class="categoria">
-                <div class="caixa_opcao">
+            <div class="categoria prato">
+                <div class="caixa caixa_opcao1" onclick="escolherPrato('caixa_opcao1')">
                     <div class="opcao">
                         <img src="Imagens/frango_yin_yang 1.jpg" alt="Prato de frango com salada e batata frita">
                         <p class="nome">Frango Yin Yang</p>
@@ -31,10 +31,10 @@
                     </div>
                     <div class="preco">
                         <p class="valor">R$ 14,90</p>
-                        <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                        <ion-icon class="escondido op_a1" name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div class="caixa_opcao">
+                <div class="caixa caixa_opcao2" onclick="escolherPrato('caixa_opcao2')">
                     <div class="opcao"> 
                         <img src="Imagens/estrogonofe-de-carne.jpg" alt="Prato de estrogonofe de carne com arroz e batata palha">
                         <p class="nome">Estrogonofe</p>
@@ -42,10 +42,10 @@
                     </div>
                     <div class="preco">
                         <p class="valor">R$ 18,90</p>
-                        <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                        <ion-icon class="escondido op_b1" name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div class="caixa_opcao">
+                <div class="caixa caixa_opcao3" onclick="escolherPrato('caixa_opcao3')">
                     <div class="opcao">
                         <img src="Imagens/bife-com-batata.jpg" alt="Prato com bife, arroz, batata frita e salada">
                         <p class="nome">Bife com batata</p>
@@ -53,10 +53,10 @@
                     </div>
                     <div class="preco">
                         <p class="valor">R$ 20,90</p>
-                        <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                        <ion-icon class="escondido op_c1" name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div class="caixa_opcao">
+                <div class="caixa caixa_opcao4" onclick="escolherPrato('caixa_opcao4')">
                     <div class="opcao">
                         <img src="Imagens/espaguete-a-bolonhesa.jpg" alt="Prato de macarrão espaguete com molho bolonhesa">
                         <p class="nome">Espaguete</p>
@@ -64,15 +64,15 @@
                     </div>
                     <div class="preco">
                         <p class="valor">R$ 22,90</p>
-                        <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+                        <ion-icon class="escondido op_d1" name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </div>
             <p class="titulo_corpo">
                 Agora, sua bebida
             </p>
-            <div class="categoria">
-                <div class="caixa_opcao">
+            <div class="categoria bebida">
+                <div class="caixa caixa_opcao5" onclick="escolherBebida('caixa_opcao5')">
                     <div class="opcao">
                         <img src="Imagens/agua.jpg" alt="Copo de água">
                         <p class="nome">Água</p>
@@ -83,7 +83,7 @@
                         <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div class="caixa_opcao">
+                <div class="caixa caixa_opcao6" onclick="escolherBebida('caixa_opcao6')">
                     <div class="opcao">
                         <img src="Imagens/coquinha_gelada 1.jpg" alt="Lata de Coca-Cola">
                         <p class="nome">Coca-Cola</p>
@@ -94,7 +94,7 @@
                         <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div class="caixa_opcao">
+                <div class="caixa caixa_opcao7" onclick="escolherBebida('caixa_opcao7')">
                     <div class="opcao">
                         <img src="Imagens/suco.jpg" alt="Copo de suco">
                         <p class="nome">Suco</p>
@@ -105,7 +105,7 @@
                         <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div class="caixa_opcao">
+                <div class="caixa caixa_opcao8" onclick="escolherBebida('caixa_opcao8')">
                     <div class="opcao">
                         <img src="Imagens/cerveja.png" alt="Lata de cerveja">
                         <p class="nome">Cerveja</p>
@@ -120,8 +120,8 @@
             <p class="titulo_corpo">
                 Por fim, sua sobremesa
             </p>
-            <div class="categoria">
-                <div class="caixa_opcao">
+            <div class="categoria sobremesa">
+                <div class="caixa caixa_opcao9" onclick="escolherSobremesa('caixa_opcao9')">
                     <div class="opcao">
                         <img src="Imagens/pudim.jpg" alt="Imagem de um pudim">
                         <p class="nome">Pudim</p>
@@ -132,7 +132,7 @@
                         <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div class="caixa_opcao">
+                <div class="caixa caixa_opcao10" onclick="escolherSobremesa('caixa_opcao10')">
                     <div class="opcao">
                         <img src="Imagens/pave.jpg" alt="Imagem de um pedaço de pavê">
                         <p class="nome">Pavê</p>
@@ -143,7 +143,7 @@
                         <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div class="caixa_opcao">
+                <div class="caixa caixa_opcao11" onclick="escolherSobremesa('caixa_opcao11')">
                     <div class="opcao">
                         <img src="Imagens/mousse-de-chocolate.jpg" alt="Imagem de taça de mousse de chocolate">
                         <p class="nome">Mousse</p>
@@ -154,7 +154,7 @@
                         <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
-                <div class="caixa_opcao">
+                <div class="caixa caixa_opcao12" onclick="escolherSobremesa('caixa_opcao12')">
                     <div class="opcao">
                         <img src="Imagens/torta-alema.jpg" alt="Imagem de torta alemã">
                         <p class="nome">Torta Alemã</p>
@@ -169,7 +169,7 @@
         </div>   
     </main>
     <div class="barra_inferior">
-        <button class="botao_confirmacao">Selecione os 3 itens<br> para fechar o pedido</button>
+        <button class="botao_confirmacao" disabled>Selecione os 3 itens<br> para fechar o pedido</button>
     </div>
     <div class="revisao escondido">
         <p>Confirme seu pedido</p>
@@ -195,6 +195,7 @@
         <a href="" class="botao_cancelar">Cancelar</a> 
     </div>
 
+    <script src="Scripts/script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>
