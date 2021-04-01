@@ -65,20 +65,24 @@ main{
     display: flex;
     margin-top: 17px;
     margin-bottom: 27px;
-    overflow: scroll;
+    overflow-x: scroll;
 }
-button{
+.caixa_opcao{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: left;
     height: 216px;
     width: 172px;
     margin-right: 16px;
-    border: none;
     border-radius: 9px;
     background-color: var(--white);
     box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, .25);
+}
+.opcao{
+    margin: 0 14px;
+    width: 144px;
+    height: 161px;
 }
 .selecionado{
     border: 5px solid var(--bg-button-second);
@@ -104,12 +108,13 @@ button{
     font-size: var(--size15);
     color: var(--cinzacl);    
 }
-.opcao_selecionada{
+.preco{
     display: flex;
     justify-content: space-between;
+    margin: 10px 14px 0 14px;
 }
 .valor{
-    font-weight: var(--font-roboto);
+    font-family: var(--font-roboto);
     font-weight: var(--font-normal400);
     font-size: var(--size16);
     color: var(--black);
