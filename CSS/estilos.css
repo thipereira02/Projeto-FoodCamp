@@ -34,6 +34,7 @@ header{
     height: 92px;
     padding-left: 21px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 5;
 }
 .titulo{
     font-family: var(--font-righteous);
@@ -79,17 +80,17 @@ button{
     background-color: var(--white);
     box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, .25);
 }
+.selecionado{
+    border: 5px solid var(--bg-button-second);
+}
 .opcao img{
     border-radius: 4px;
     width: 144px;
     height: 87px;
+    margin-bottom: 8px;
 }
-.opcao div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 185px;
-    width: 144px;
+.opcao p{
+    margin-bottom: 8px;
 }
 .nome{
     font-family: var(--font-roboto);
@@ -103,11 +104,19 @@ button{
     font-size: var(--size15);
     color: var(--cinzacl);    
 }
+.opcao_selecionada{
+    display: flex;
+    justify-content: space-between;
+}
 .valor{
     font-weight: var(--font-roboto);
     font-weight: var(--font-normal400);
     font-size: var(--size16);
     color: var(--black);
+}
+ion-icon{
+    color: var(--bg-button-second);
+    font-size: var(--size18);
 }
 .barra_inferior{
     position: fixed;
@@ -135,7 +144,7 @@ button{
     margin: 8px auto 0 auto;
 }
 .revisao{
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 377px;
@@ -144,6 +153,9 @@ button{
     border-radius: 9px;
     font-family: var(--font-roboto);
     color: var(--white);
+}
+.escondido{
+    display: none;
 }
 .revisao p{
     font-size: var(--size22);
