@@ -21,7 +21,7 @@
     --size26: 26px;
     --size44: 44px;
 }
-header, main, .barra_inferior{
+header, main, .barra_inferior, .revisao{
     max-width: 414px;
     margin-left: max(0px, 50vw - 207px);
 }
@@ -34,7 +34,7 @@ header{
     height: 92px;
     padding-left: 21px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: 5;
+    z-index: 1;
 }
 .titulo{
     font-family: var(--font-righteous);
@@ -79,14 +79,12 @@ main{
     background-color: var(--white);
     box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, .25);
     cursor: pointer;
+    position: relative;
 }
 .opcao{
     margin: 0 14px;
     width: 144px;
     height: 161px;
-}
-.selecionado{
-    border: 5px solid var(--bg-button-second);
 }
 .opcao img{
     border-radius: 4px;
@@ -112,6 +110,7 @@ main{
 .preco{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 10px 14px 0 14px;
 }
 .valor{
@@ -120,12 +119,21 @@ main{
     font-size: var(--size16);
     color: var(--black);
 }
+.selecionado{
+    border: 5px solid var(--bg-button-second);
+    box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, .25);
+    border-radius: 9px;
+}
 ion-icon{
     color: var(--bg-button-second);
     font-size: var(--size18);
 }
+.escondido{
+    display: none;
+}
 .barra_inferior{
     position: fixed;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +144,11 @@ ion-icon{
     background-color: var(--white);
     box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.25);;
 }
-.botao_confirmacao{
+.botao_confirmacao_off{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 61px;
     width: 364px;
     border-radius: 50px;
@@ -149,19 +161,36 @@ ion-icon{
     text-align: center;
     margin: 8px auto 0 auto;
 }
+.botao_confirmacao_on{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 61px;
+    width: 364px;
+    border-radius: 50px;
+    background-color: var(--bg-button-second);
+    border: none;
+    font-size: var(--size20);
+    font-family: var(--font-roboto);
+    font-weight: var(--font-normal400);
+    color: var(--white);
+    text-align: center;
+    margin: 8px auto 0 auto;
+    cursor: pointer;
+}
 .revisao{
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 10;
     width: 377px;
     height: 353px;
     background-color: var(--bg-telaconfirmacao);
     border-radius: 9px;
     font-family: var(--font-roboto);
     color: var(--white);
-}
-.escondido{
-    display: none;
+    margin: 0 auto;
 }
 .revisao p{
     font-size: var(--size22);
@@ -182,6 +211,9 @@ ion-icon{
     font-weight: var(--font-bold700);
 }
 .botao_confirmar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--white);
     font-size: var(--size22);
     font-weight: var(--font-bold700);
@@ -189,6 +221,8 @@ ion-icon{
     width: 329px;
     height: 52px;
     border-radius: 100px;
+    cursor: pointer;
+    border: none;
     padding: 20px 0;
     margin-top: 40px;
 }
@@ -199,6 +233,5 @@ ion-icon{
     background-color: var(--bg-telaconfirmacao);
     font-weight: var(--font-bold700);
     width: 333px;
-    height: 52px;
     margin-top: 20px;
 }
