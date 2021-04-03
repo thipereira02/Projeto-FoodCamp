@@ -30,7 +30,7 @@
                         <p class="descricao">Um pouco de batata, um pouco de salada</p>
                     </div>
                     <div class="preco">
-                        <p class="valor">R$ 14,90</p>
+                        <p class="valor">R$ <span>14,90</span></p>
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                         <p class="descricao">Carne com molho e arroz</p>
                     </div>
                     <div class="preco">
-                        <p class="valor">R$ 18,90</p>
+                        <p class="valor">R$ <span>18,90</span></p>
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                         <p class="descricao">Bife com batatas e arroz</p>
                     </div>
                     <div class="preco">
-                        <p class="valor">R$ 20,90</p>
+                        <p class="valor">R$ <span>20,90</span></p>
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                         <p class="descricao">Macarrão com molho à bolonhesa</p>
                     </div>
                     <div class="preco">
-                        <p class="valor">R$ 22,90</p>
+                        <p class="valor">R$ <span>22,90</span></p>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                         <p class="descricao">Garrafa<br> 500ml</p>
                     </div>
                     <div class="preco">
-                        <p class="valor">R$ 3,90</p>
+                        <p class="valor">R$ <span>3,90</span></p>
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                         <p class="descricao">Lata<br> 350ml</p>
                     </div>
                     <div class="preco">
-                        <p class="valor">R$ 4,90</p>
+                        <p class="valor">R$ <span>4,90</span></p>
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                         <p class="descricao">Copo<br> 300ml</p>
                     </div>
                     <div class="preco">
-                        <p class="valor">R$ 5,50</p>
+                        <p class="valor">R$ <span>5,50</span></p>
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
                         <p class="descricao">Lata<br> 350ml</p>
                     </div>
                     <div class="preco">
-                        <p class="valor">R$ 5,90</p>
+                        <p class="valor">R$ <span>5,90</span></p>
                         <ion-icon name="checkmark-circle"  class="escondido"></ion-icon>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                         <p class="descricao">Pudim de leite condensado</p>
                     </div>
                     <div class="preco">
-                        <p class="valor">R$ 5,90</p>
+                        <p class="valor">R$ <span>5,90</span></p>
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
                         <p class="descricao">Torta com base de biscoitos</p>
                     </div>
                     <div class="preco">
-                        <p class="valor">R$ 6,90</p>
+                        <p class="valor">R$ <span>6,90</span></p>
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                         <p class="descricao">Sobremesa leve e aerada</p>
                     </div>
                     <div class="preco">
-                        <p class="valor">R$ 7,90</p>
+                        <p class="valor">R$ <span>7,90</span></p>
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                         <p class="descricao">Torta com biscoitos e chocolate</p>
                     </div>
                     <div class="preco">
-                        <p class="valor">R$ 8,90</p>
+                        <p class="valor">R$ <span>8,90</span></p>
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </div>
@@ -169,26 +169,26 @@
         </div>   
     </main>
     <div class="barra_inferior">
-        <div class="botao_confirmacao_off">
-            <p>Selecione os 3 itens<br> para fechar o pedido</p> 
-        </div>
-        <div class="botao_confirmacao_on" onclick="pedido_confirmado()">
-            <p>Fechar pedido</p> 
-        </div>
+        <button class="botao_confirmacao" disabled onclick="pedido_confirmado()">
+            Selecione os 3 itens<br> para fechar o pedido
+        </button>
     </div>
-    <div class="revisao">
+
+
+
+    <div class="caixa_revisao escondido">
         <p>Confirme seu pedido</p>
         <div>
             <div class="linhas_itens">
-                <p></p>
+                <p>--</p>
                 <p>--</p>
             </div>
             <div class="linhas_itens">
-                <p></p>
+                <p>--</p>
                 <p>--</p>
             </div>
             <div class="linhas_itens">
-                <p></p>
+                <p>--</p>
                 <p>--</p>
             </div>
             <div class="linhas_itens">

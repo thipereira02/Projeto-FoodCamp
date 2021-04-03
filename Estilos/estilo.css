@@ -144,8 +144,7 @@ ion-icon{
     background-color: var(--white);
     box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.25);;
 }
-.botao_confirmacao_off{
-    position: relative;
+.botao_confirmacao{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,36 +160,22 @@ ion-icon{
     text-align: center;
     margin: 8px auto 0 auto;
 }
-.botao_confirmacao_on{
-    position: absolute;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    height: 61px;
-    width: 364px;
-    border-radius: 50px;
+.habilitado{
     background-color: var(--bg-button-second);
-    border: none;
-    font-size: var(--size20);
-    font-family: var(--font-roboto);
-    font-weight: var(--font-normal400);
-    color: var(--white);
-    text-align: center;
-    margin: 8px auto 0 auto;
     cursor: pointer;
 }
-.revisao{
+.caixa_revisao{
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 10;
     width: 377px;
     height: 353px;
     background-color: var(--bg-telaconfirmacao);
     border-radius: 9px;
     font-family: var(--font-roboto);
     color: var(--white);
-    margin: 0 auto;
+    margin: auto;
 }
 .revisao p{
     font-size: var(--size22);
