@@ -16,20 +16,20 @@ function escolherPrato(opcaoPrato){
     if (selecionado !== null) {
         selecionado.classList.remove('selecionado');
         const check = selecionado.querySelector("ion-icon");
-        check.classList.add('escondido')
+        check.classList.add('escondido');
         opcoes--;
     }
 	
     const escolha = document.querySelector("." + opcaoPrato);
     escolha.classList.add('selecionado');
-    const check = escolha.querySelector("ion-icon")
-    check.classList.remove('escondido')
+    const check = escolha.querySelector("ion-icon");
+    check.classList.remove('escondido');
     opcoes++;
 
     prato = document.querySelector("."+opcaoPrato+" .nome").innerHTML;
     preco_prato = parseFloat(document.querySelector("."+opcaoPrato+" span").innerHTML.replace(",","."));
 
-    habilitarBotao();
+    habilitar_botao();
 }
 
 function escolherBebida(opcaoBebida){
@@ -38,20 +38,20 @@ function escolherBebida(opcaoBebida){
     if (selecionado !== null) {
         selecionado.classList.remove('selecionado');
         const check = selecionado.querySelector("ion-icon");
-        check.classList.add('escondido')
+        check.classList.add('escondido');
         opcoes--;
     }
 	
     const escolha = document.querySelector("." + opcaoBebida);
     escolha.classList.add('selecionado');
-    const check = escolha.querySelector("ion-icon")
-    check.classList.remove('escondido')
+    const check = escolha.querySelector("ion-icon");
+    check.classList.remove('escondido');
     opcoes++;
 
     bebida = document.querySelector("."+opcaoBebida+" .nome").innerHTML;
     preco_bebida = parseFloat(document.querySelector("."+opcaoBebida+" span").innerHTML.replace(",","."));
 
-    habilitarBotao();
+    habilitar_botao();
 }
 
 function escolherSobremesa(opcaoSobremesa){
@@ -60,31 +60,54 @@ function escolherSobremesa(opcaoSobremesa){
     if (selecionado !== null) {
         selecionado.classList.remove('selecionado');
         const check = selecionado.querySelector("ion-icon");
-        check.classList.add('escondido')
+        check.classList.add('escondido');
         opcoes--;
     }
 	
     const escolha = document.querySelector("." + opcaoSobremesa);
     escolha.classList.add('selecionado');
-    const check = escolha.querySelector("ion-icon")
-    check.classList.remove('escondido')
+    const check = escolha.querySelector("ion-icon");
+    check.classList.remove('escondido');
     opcoes++;
 
     sobremesa = document.querySelector("."+opcaoSobremesa+" .nome").innerHTML;
     preco_sobremesa = parseFloat(document.querySelector("."+opcaoSobremesa+" span").innerHTML.replace(",","."));
 
-    habilitarBotao();
+    habilitar_botao();
 }
 
 
-function habilitarBotao(){
-    const selecionado = document.querySelector(".botao_confirmacao")
+function habilitar_botao(){
+    const selecionado = document.querySelector(".botao_confirmacao");
     
     if (opcoes===3) {
         selecionado.innerHTML="Fechar pedido";
         selecionado.disabled = false;
         selecionado.classList.add('habilitado');       
     }
+}
+
+function confirmar_itens(){
+    const clique = document.querySelector(".fundo");
+    clique.classList.remove("escondido");
+
+    const opcaoprato = document.querySelector(".confirme_prato p");
+    opcaoprato.innerHTML=prato;
+    const valorprato = document.querySelector(".confirme_prato span");
+    valorprato.innerHTML=preco_prato.toFixed(2);
+
+    const opcaobebida = document.querySelector(".confirme_bebida p");
+    opcaobebida.innerHTML=bebida;
+    const valorbebida = document.querySelector(".confirme_bebida span");
+    valorbebida.innerHTML=preco_bebida.toFixed(2);
+
+    const opcaosobremesa = document.querySelector(".confirme_sobremesa p");
+    opcaosobremesa.innerHTML=sobremesa;
+    const valorsobremesa = document.querySelector(".confirme_sobremesa span");
+    valorsobremesa.innerHTML=preco_sobremesa.toFixed(2);
+
+    const total = document.querySelector(".total span");
+    total.innerHTML="R$ " + (preco_prato + preco_sobremesa + preco_bebida).toFixed(2);
 }
 
 function pedido_confirmado(){
@@ -96,4 +119,9 @@ function pedido_confirmado(){
     texto = "Olá, gostaria de fazer o pedido:\n- Prato: " + prato + "\n- Bebida: " + bebida + "\n- Sobremesa: " + sobremesa + "\nTotal: R$ " + preco_pedido + "\n\nNome: " + nome_cliente + "\nEndereço: " + endereco_cliente;
     texto = encodeURIComponent(texto);
     window.location.href="https://wa.me/5581991947182?text=" + texto;
+}
+
+function pedido_cancelado(){
+    const cancelar = document.querySelector(".fundo");
+    cancelar.classList.add("escondido")
 }

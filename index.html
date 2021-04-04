@@ -169,35 +169,34 @@
         </div>   
     </main>
     <div class="barra_inferior">
-        <button class="botao_confirmacao" disabled onclick="pedido_confirmado()">
+        <button class="botao_confirmacao" disabled onclick="confirmar_itens()">
             Selecione os 3 itens<br> para fechar o pedido
         </button>
     </div>
-
-
-
-    <div class="caixa_revisao escondido">
-        <p>Confirme seu pedido</p>
-        <div>
-            <div class="linhas_itens">
-                <p>--</p>
-                <p>--</p>
+    <div class="fundo escondido">
+        <div class="tela_confirmacao">
+            <div class="titulo_confirmacao">
+                <p>Confirme seu pedido</p>
             </div>
-            <div class="linhas_itens">
-                <p>--</p>
-                <p>--</p>
+            <div class="dados_pedido confirme_prato">
+                <p></p>
+                <span></span>
             </div>
-            <div class="linhas_itens">
-                <p>--</p>
-                <p>--</p>
+            <div class="dados_pedido confirme_bebida">
+                <p></p>
+                <span></span>
             </div>
-            <div class="linhas_itens">
-                <p class="total">TOTAL</p>
-                <p class="total">R$ --</p>
+            <div class="dados_pedido confirme_sobremesa">
+                <p></p>
+                <span>--</span>
             </div>
+            <div class="total">
+                <p>TOTAL</p>
+                <span></span>
+            </div>
+            <button class="confirmar" onclick="pedido_confirmado()">Tudo certo, pode pedir!</button>
+            <button class="cancelar" onclick="pedido_cancelado()">Cancelar</button>
         </div>
-        <button class="botao_confirmar">Tudo certo, pode pedir!</button>
-        <a href="" class="botao_cancelar">Cancelar</a> 
     </div>
 
     <script src="Scripts/script.js"></script>

@@ -24,6 +24,7 @@
 header, main, .barra_inferior, .revisao{
     max-width: 414px;
     margin-left: max(0px, 50vw - 207px);
+    position: absolute;
 }
 header{
     position: fixed;
@@ -164,59 +165,77 @@ ion-icon{
     background-color: var(--bg-button-second);
     cursor: pointer;
 }
-.caixa_revisao{
+.fundo{
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    z-index: 2;
+    width: 414px;
+    height: 1026px;
+    background-color:rgba(255, 255, 255, 0.7);;
+    left: calc(50vw - 207px);
+
+}
+.tela_confirmacao{
+    background-color: var(--bg-telaconfirmacao);
     width: 377px;
     height: 353px;
-    background-color: var(--bg-telaconfirmacao);
+    top: calc(50vh - 177.5px);
+    left: calc(50vw - 189px);
+    position: fixed;
     border-radius: 9px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+.titulo_confirmacao{
+    margin: 21px auto 28px auto;
+    text-align: center;
     font-family: var(--font-roboto);
-    color: var(--white);
-    margin: auto;
-}
-.revisao p{
     font-size: var(--size22);
+    color: var(--white);
     font-weight: var(--font-bold700);
-    margin-top: 21px;
-    margin-bottom: px;
 }
-.linhas_itens{
+.dados_pedido{
     display: flex;
     justify-content: space-between;
-    width: calc(172px + 93px + 61px);
+    margin: 0 26px;
 }
-.linhas_itens p{
-    font-weight: var(--font-normal400);
-    margin-bottom: -5px;
-}
-.linhas_itens .total{
-    font-weight: var(--font-bold700);
-}
-.botao_confirmar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--white);
+.dados_pedido p, .dados_pedido span{
+    font-family: var(--font-roboto);
     font-size: var(--size22);
+    color: var(--white);
+    font-weight: var(--font-normal400);
+    margin-bottom: 13px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 26px 24px 26px;
+    color: var(--white);
+    font-family: var(--font-roboto);
     font-weight: var(--font-bold700);
-    color: var(--bg-telaconfirmacao);
+    font-size: var(--size22);
+}
+.confirmar{
     width: 329px;
     height: 52px;
+    color: var(--bg-telaconfirmacao);
+    background-color: var(--white);
+    font-family: var(--font-roboto);
+    font-weight: var(--font-bold700);
+    font-size: var(--size22);
+    margin: 15px 26px 0 26px;
+    border: none;
     border-radius: 100px;
     cursor: pointer;
-    border: none;
-    padding: 20px 0;
-    margin-top: 40px;
 }
-.botao_cancelar{
-    display: flex;
-    justify-content: center;
-    font-size: var(--size20);
+.cancelar{
+    width: 329px;
+    height: 52px;
+    margin: 0 26px;
+    color: var(--white);
     background-color: var(--bg-telaconfirmacao);
+    border: none;
+    font-family: var(--font-roboto);
+    font-size: var(--size20);
     font-weight: var(--font-bold700);
-    width: 333px;
-    margin-top: 20px;
+    cursor: pointer;
 }
